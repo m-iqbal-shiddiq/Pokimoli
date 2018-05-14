@@ -1,0 +1,8 @@
+{
+  "name": "Pokimoli",
+  "app_id": "e914f038",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
