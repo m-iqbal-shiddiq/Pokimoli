@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { HomepagePage } from '../homepage/homepage';
 
 /**
  * Generated class for the SignupuserPage page.

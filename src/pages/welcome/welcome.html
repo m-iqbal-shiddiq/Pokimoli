@@ -1,11 +1,24 @@
 <ion-content padding class="padding bg-img">
-  
-    <img class="img" src="assets/imgs/logowhite.png" width="100">
+	
+    <div>
+    	<h1 class="text">Masuk Sebagai :</h1>
 
-        <img class="user-img" src="assets/imgs/user_face_green.png" width="120" float-left>  
-        <button class="user-btn" ion-button round float-right color="greenPoki" (click)="gotouser()">USER</button>
-  
-        <img class="driver-img" src="assets/imgs/driver_face_green.png" width="120" float-left>
-        <button class="driver-btn" ion-button round float-right color="greenPoki" (click)="gotodriver()">DRIVER</button>
-  
+    	<table>
+    		<tr>
+    			<th><img class="user-img" src="assets/imagebaru/STARTSCREEN/icon-user-border.png" width="156"></th>
+    			<th><img class="user-btn" src="assets/imagebaru/STARTSCREEN/button-user.png" width="130" (click)="gotouser()"></th>
+    		</tr>
+    		<tr>
+    			<th><img class="driver-img" src="assets/imagebaru/STARTSCREEN/icon-driver-border.png" width="156"></th>
+    			<th><img class="driver-btn" src="assets/imagebaru/STARTSCREEN/button-driver.png" width="130" (click)="gotodriver()"></th>
+    		</tr>
+    	</table>
+	     
+	    
+	    <!--<button class="user-btn" ion-button round float-right color="greenPoki" (click)="gotouser()">USER</button>-->
+	  
+	    
+	    <!--<button class="driver-btn" ion-button round float-left color="greenPoki" (click)="gotodriver()">DRIVER</button>-->
+  	</div>
+
 </ion-content>

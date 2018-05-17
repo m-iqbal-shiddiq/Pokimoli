@@ -1,6 +1,12 @@
 page-user {
+    div.form{
+        position: relative;
+        top: 200px;
+        border: 1px;
+    }
+
     .bg-img{
-        background: url('../assets/imgs/background.png') no-repeat center center fixed;
+        background: url('../assets/imagebaru/LOGINUSER/bg-loginuser.jpg') no-repeat center center fixed;
         background-size: cover;
         width: 100%;
         height: 100%;
@@ -23,9 +29,26 @@ page-user {
 
     .btn{
         margin-top: 25px;
+        text-alignment: center;
     }
 
     .btn1{
         margin-top: 20px;
+    }
+
+    div.lupasandi{
+        font-weight: normal;
+        font-style: italic;
+        font-size: 11pt;
+        color: color($colors, greenPoki);
+        text-align: center;
+    }
+
+    div.belumdaftar{
+        font-weight: normal;
+        font-style: italic;
+        font-size: 11pt;
+        color: color($colors, greenPoki);
+        text-align: center;
     }
 }

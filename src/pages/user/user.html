@@ -1,22 +1,24 @@
 <ion-content padding class="padding bg-img">
-    <img class="img" src="assets/imgs/logowhite.png" width="100">
+   
+   <div class="form"> 
+      <ion-list class="form-img">
+         <ion-item>
+            <ion-label floating>Nama</ion-label>
+            <ion-input type="text"></ion-input>
+         </ion-item>
     
-    <ion-list class="form-img">
-
-        <ion-item>
-          <ion-label>Nama Pengguna</ion-label>
-          <ion-input type="text"></ion-input>
-        </ion-item>
-      
-        <ion-item>
-          <ion-label>Kata Sandi</ion-label>
-          <ion-input type="password"></ion-input>
-        </ion-item>
-
-        <button ion-button color="bluePoki" class="btn" (click)="gotoHome()">Masuk</button>
-      
+         <ion-item>
+            <ion-label floating>Kata Sandi</ion-label>
+            <ion-input type="password"></ion-input>
+         </ion-item>
       </ion-list>
+   
+      <button class="btn" ion-button round large="true" color="greenPoki" (click)="gotoHome()">LOG IN</button>
+   
 
-      <button ion-button block color="bluePoki" class="btn1" (click)="gotoSignup()">Daftar</button>
+      <!--<button class="btn1" ion-button block color="bluePoki" (click)="gotoSignup()">LOG IN</button>-->
+  </div>
 
+   <div class="lupasandi"><p><u>Lupa kata sandi?</u></p></div>
+   <div class="belumdaftar"><p class="one" (click)="gotoSignup()">Belum terdaftar? <b><u>Buat akun.</u></b></p></div>
 </ion-content>
