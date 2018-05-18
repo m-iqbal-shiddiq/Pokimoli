@@ -27,7 +27,7 @@ export class LoginuserPage {
  
 
   keuserhome(){
-    this.navCtrl.push(HomepagePage);
+    this.navCtrl.push(HomePage);
   }
   keregister(){
     this.navCtrl.push(SignupuserPage);
