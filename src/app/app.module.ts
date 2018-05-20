@@ -13,6 +13,11 @@ import { UserPage } from '../pages/user/user';
 import { DriverPage } from '../pages/driver/driver';
 import { SignupPage } from '../pages/signup/signup';
 
+import { HttpModule } from '@angular/http';
+import { IonicStorageModule } from '@ionic/storage';
+import { Data } from '../provider/data';
+import { ProfilePage } from '../pages/profile/profile';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -21,11 +26,14 @@ import { SignupPage } from '../pages/signup/signup';
     WelcomePage,
     UserPage,
     DriverPage,
-    SignupPage
+    SignupPage,
+    ProfilePage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    HttpModule,
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -35,12 +43,14 @@ import { SignupPage } from '../pages/signup/signup';
     WelcomePage,
     UserPage,
     DriverPage,
-    SignupPage
+    SignupPage,
+    ProfilePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Data
   ]
 })
 export class AppModule {}

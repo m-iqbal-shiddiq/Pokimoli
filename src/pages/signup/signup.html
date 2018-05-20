@@ -4,21 +4,27 @@
       <ion-list>
          <ion-item id="form-img">
             <ion-label floating>Nama</ion-label>
-            <ion-input type="text"></ion-input>
+            <ion-input type="text" [(ngModel)]="nama"></ion-input>
          </ion-item>
           
          <ion-item id="form-img">
             <ion-label floating>Email</ion-label>
-            <ion-input type="text"></ion-input>
+            <ion-input type="text" [(ngModel)]="email"></ion-input>
           </ion-item>
           
          <ion-item id="form-img">
             <ion-label floating>Kata Sandi</ion-label>
-            <ion-input type="password"></ion-input>
+            <ion-input type="password" [(ngModel)]="password"></ion-input>
          </ion-item>
+
+         <ion-item id="form-img">
+          <ion-label floating>Ulangi Kata Sandi</ion-label>
+          <ion-input type="password" [(ngModel)]="passwordTest"></ion-input>
+       </ion-item>
+
       </ion-list>
    
-      <button class="btn" ion-button round large="true" color="greenPoki" (click)="gotoHome()">DAFTAR</button>
+      <button class="btn" ion-button round large="true" color="greenPoki" (click)="signUp()">DAFTAR</button>
    
 
       <!--<button class="btn1" ion-button block color="bluePoki" (click)="gotoSignup()">LOG IN</button>-->
