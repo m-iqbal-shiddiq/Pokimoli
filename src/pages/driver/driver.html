@@ -11,20 +11,19 @@
   </ion-navbar>
 
 </ion-header>
-
-
-<ion-content padding>
+<ion-content padding class="padding bg-img">
+   
+  <div class="form"> 
+     <ion-list>
+        <ion-item id="form-img">
+           <ion-label floating>KODE UNIK</ion-label>
+           <ion-input type="text"></ion-input>
+        </ion-item>
+     </ion-list>
   
-    <ion-item>
-        <ion-label floating>Username</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item>
-    
-      <ion-item>
-        <ion-label floating>Password</ion-label>
-        <ion-input type="password"></ion-input>
-      </ion-item>
+     <button class="btn" ion-button round large="true" color="greenPoki" (click)="gotoHome()">LOG IN</button>
+  
 
-      <button ion-button block color="primary" class="btn">Sign In</button>
-
+     <!--<button class="btn1" ion-button block color="bluePoki" (click)="gotoSignup()">MASUK</button>-->
+ </div>
 </ion-content>

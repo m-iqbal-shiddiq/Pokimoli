@@ -1,3 +1,69 @@
 page-driver {
+    div.form{
+        position: absolute;
+        top: 35%;
+        right: 5%;
+        left: 5%;
+        border: 1px;
+    }
 
+    .bg-img{
+        background: url('../assets/imagebaru/LOGINUSER/bg-loginuser.jpg') no-repeat center center fixed;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    #form-img{
+        //background: url('../assets/imgs/background_form.png') no-repeat center center fixed;
+        color: color($colors, greenPoki);
+        border: 3px solid color($colors, greenPoki);
+        width: 100%;
+        height: 50%;
+        //background-repeat: no-repeat;
+    }
+
+    .btn{
+        margin-top: 0;
+        width: 100%;
+        text-alignment: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn1{
+        margin-top: 20px;
+    }
+
+    div.lupasandi{
+        font-weight: normal;
+        font-style: italic;
+        font-size: 11pt;
+        color: color($colors, greenPoki);
+        text-align: center;
+        position: absolute;
+        bottom: 20%;
+        right: 0;
+        left: 0;
+    }
+
+    div.belumdaftar{
+        font-weight: normal;
+        font-style: italic;
+        font-size: 11pt;
+        color: color($colors, light);
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
 }
