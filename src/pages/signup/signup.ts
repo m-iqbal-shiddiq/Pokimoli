@@ -69,7 +69,7 @@ export class SignupPage {
       else if(response.status==409) {
         loading.dismiss();
           let alert = this.alertCtrl.create({
-            title: 'Email Already Taken',      
+            title: 'Email sudah terdaftar',      
             buttons: ['OK']
           });
           alert.present();
@@ -78,7 +78,7 @@ export class SignupPage {
       else {
         loading.dismiss();
           let alert = this.alertCtrl.create({
-            title: 'Failed Creating New Account',      
+            title: 'Gagal membuat akun',      
             buttons: ['OK']
           });
           alert.present();      
