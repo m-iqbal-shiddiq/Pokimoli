@@ -17,6 +17,8 @@ import { HttpModule } from '@angular/http';
 import { IonicStorageModule } from '@ionic/storage';
 import { Data } from '../provider/data';
 import { ProfilePage } from '../pages/profile/profile';
+import { DriverhomePage } from '../pages/driverhome/driverhome';
+import { PesanpokiPage } from '../pages/pesanpoki/pesanpoki';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ProfilePage } from '../pages/profile/profile';
     UserPage,
     DriverPage,
     SignupPage,
-    ProfilePage
+    ProfilePage,
+    DriverhomePage,
+    PesanpokiPage,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +48,9 @@ import { ProfilePage } from '../pages/profile/profile';
     UserPage,
     DriverPage,
     SignupPage,
-    ProfilePage
+    ProfilePage,
+    DriverhomePage,
+    PesanpokiPage,
   ],
   providers: [
     StatusBar,
