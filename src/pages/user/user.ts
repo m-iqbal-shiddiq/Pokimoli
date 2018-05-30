@@ -25,7 +25,6 @@ export class UserPage {
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    public loadctrl: LoadingController,
     public http: Http,
     private data: Data,
     public loadCtrl: LoadingController,

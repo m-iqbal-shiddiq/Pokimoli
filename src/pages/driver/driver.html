@@ -17,11 +17,11 @@
      <ion-list>
         <ion-item id="form-img">
            <ion-label floating>KODE UNIK</ion-label>
-           <ion-input type="text"></ion-input>
+           <ion-input type="text" [(ngModel)]="kode_unik"></ion-input>
         </ion-item>
      </ion-list>
   
-     <button class="btn" ion-button round large="true" color="greenPoki" (click)="gotoHome()">LOG IN</button>
+     <button class="btn" ion-button round large="true" color="greenPoki" (click)="signIn()">LOG IN</button>
   
 
      <!--<button class="btn1" ion-button block color="bluePoki" (click)="gotoSignup()">MASUK</button>-->

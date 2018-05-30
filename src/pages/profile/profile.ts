@@ -31,17 +31,17 @@ export class ProfilePage {
 
   signOut(){
     let confirm = this.alertCtrl.create({
-      title: 'Sign Out?',
-      message: 'any job that have not uploaded to the server will not be saved?',
+      title: 'Keluar',
+      message: 'Anda yakin ingin keluar?',
       buttons: [
         {
-          text: 'Cancel',
+          text: 'Tidak',
           handler: () => {
             console.log('Disagree clicked');
           }
         },
         {
-          text: 'Sign Out',
+          text: 'Ya',
           handler: () => {
             console.log('Agree clicked');
             this.data.logout();  //hapus storage cache local  

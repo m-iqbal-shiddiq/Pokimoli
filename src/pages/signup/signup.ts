@@ -22,6 +22,7 @@ export class SignupPage {
   email:any;
   password:any;
   nama:any;
+  no_hp: any;
   passwordTest:any;
 
   constructor(
@@ -38,7 +39,7 @@ export class SignupPage {
   }
 
   signUp(){
-    if(this.nama && this.email && this.password && (this.password == this.passwordTest)) {
+    if(this.nama && this.email && this.no_hp && this.password && (this.password == this.passwordTest)) {
 
       let loading = this.loadCtrl.create({
         content: 'memuat..'
@@ -49,6 +50,7 @@ export class SignupPage {
       //apiPost
       let input = {
         nama :this.nama,
+        no_hp : this.no_hp,
         email : this.email, 
         password : this.password  
       };
