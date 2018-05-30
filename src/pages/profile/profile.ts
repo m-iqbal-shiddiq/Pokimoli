@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { WelcomePage } from '../welcome/welcome';
 import { Data } from '../../provider/data';
+import { Http } from '@angular/http';
+
 
 /**
  * Generated class for the ProfilePage page.
@@ -16,12 +18,29 @@ import { Data } from '../../provider/data';
   templateUrl: 'profile.html',
 })
 export class ProfilePage {
+  id_user: any;
+  nama_user: any;
+  no_hp: any;
+  email_user: any;
+
+  userData: any;
 
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
     public alertCtrl: AlertController,
-    public data: Data) {
+    private data: Data,
+    public http: Http) {
+
+      this.data.getData().then((data) =>
+    {
+      console.log(data);
+      this.userData = data;
+      this.id_user = data.id_user;
+      this.email_user = data.email_user;
+      this.nama_user = data.nama_user;
+      this.no_hp = data.no_hp;
+    })
     
   }
 
