@@ -17,12 +17,8 @@ import { HttpModule } from '@angular/http';
 import { IonicStorageModule } from '@ionic/storage';
 import { Data } from '../provider/data';
 import { ProfilePage } from '../pages/profile/profile';
-<<<<<<< HEAD
 import { EditprofilePage } from '../pages/editprofile/editprofile';
-=======
 import { DriverhomePage } from '../pages/driverhome/driverhome';
-import { PesanpokiPage } from '../pages/pesanpoki/pesanpoki';
->>>>>>> 66d0c5da75d88e76325ca88dbced199331730396
 
 @NgModule({
   declarations: [
@@ -34,12 +30,8 @@ import { PesanpokiPage } from '../pages/pesanpoki/pesanpoki';
     DriverPage,
     SignupPage,
     ProfilePage,
-<<<<<<< HEAD
-    EditprofilePage
-=======
-    DriverhomePage,
-    PesanpokiPage,
->>>>>>> 66d0c5da75d88e76325ca88dbced199331730396
+    EditprofilePage,
+    DriverhomePage
   ],
   imports: [
     BrowserModule,
@@ -57,12 +49,8 @@ import { PesanpokiPage } from '../pages/pesanpoki/pesanpoki';
     DriverPage,
     SignupPage,
     ProfilePage,
-<<<<<<< HEAD
-    EditprofilePage
-=======
-    DriverhomePage,
-    PesanpokiPage,
->>>>>>> 66d0c5da75d88e76325ca88dbced199331730396
+    EditprofilePage,
+    DriverhomePage
   ],
   providers: [
     StatusBar,
