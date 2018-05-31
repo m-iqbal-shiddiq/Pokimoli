@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angu
 import { WelcomePage } from '../welcome/welcome';
 import { Data } from '../../provider/data';
 import { Http } from '@angular/http';
+import { EditprofilePage } from '../editprofile/editprofile';
 
 
 /**
@@ -46,6 +47,10 @@ export class ProfilePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProfilePage');
+  }
+
+  gotoEdit(){
+    this.navCtrl.push(EditprofilePage, this.userData);
   }
 
   signOut(){
