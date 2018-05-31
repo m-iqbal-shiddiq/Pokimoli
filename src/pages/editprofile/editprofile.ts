@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams, LoadingController, AlertController
 import { Data } from '../../provider/data';
 import { Http } from '@angular/http';
 import { ProfilePage } from '../profile/profile';
-import { UserPage } from '../user/user';
+
 /**
  * Generated class for the EditprofilePage page.
  *

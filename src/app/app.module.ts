@@ -19,6 +19,7 @@ import { Data } from '../provider/data';
 import { ProfilePage } from '../pages/profile/profile';
 import { EditprofilePage } from '../pages/editprofile/editprofile';
 import { DriverhomePage } from '../pages/driverhome/driverhome';
+import { PesanpokiPage } from '../pages/pesanpoki/pesanpoki';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { DriverhomePage } from '../pages/driverhome/driverhome';
     SignupPage,
     ProfilePage,
     EditprofilePage,
-    DriverhomePage
+    DriverhomePage,
+    PesanpokiPage
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,8 @@ import { DriverhomePage } from '../pages/driverhome/driverhome';
     SignupPage,
     ProfilePage,
     EditprofilePage,
-    DriverhomePage
+    DriverhomePage,
+    PesanpokiPage
   ],
   providers: [
     StatusBar,
