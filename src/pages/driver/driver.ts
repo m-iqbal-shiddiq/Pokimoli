@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
-import { HomePage } from '../home/home';
 import { Http } from '@angular/http';
 import { Data } from '../../provider/data';
+import { DriverhomePage } from '../driverhome/driverhome';
 
 /**
  * Generated class for the DriverPage page.
@@ -54,7 +54,7 @@ export class DriverPage {
         
         this.data.login(response.data,"user");//ke lokal
         
-        this.navCtrl.setRoot(HomePage);
+        this.navCtrl.setRoot(DriverhomePage);
         loading.dismiss();
       }
       else {
