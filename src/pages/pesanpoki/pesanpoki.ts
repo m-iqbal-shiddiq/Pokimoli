@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams, LoadingController, AlertController
 import { Data } from '../../provider/data';
 import { Http } from '@angular/http';
 import { HomePage } from '../home/home';
+import { KonfirmasiPage } from '../konfirmasi/konfirmasi';
 /**
  * Generated class for the PesanpokiPage page.
  *
@@ -68,7 +69,7 @@ export class PesanpokiPage {
       if(response.status==200){    
  
         
-        this.navCtrl.push(HomePage);      
+        this.navCtrl.push(KonfirmasiPage);      
         loading.dismiss();
       }
       else if(response.status==409) {

@@ -20,6 +20,7 @@ import { ProfilePage } from '../pages/profile/profile';
 import { EditprofilePage } from '../pages/editprofile/editprofile';
 import { DriverhomePage } from '../pages/driverhome/driverhome';
 import { PesanpokiPage } from '../pages/pesanpoki/pesanpoki';
+import { KonfirmasiPage } from '../pages/konfirmasi/konfirmasi';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { PesanpokiPage } from '../pages/pesanpoki/pesanpoki';
     ProfilePage,
     EditprofilePage,
     DriverhomePage,
-    PesanpokiPage
+    PesanpokiPage,
+    KonfirmasiPage
   ],
   imports: [
     BrowserModule,
@@ -53,7 +55,8 @@ import { PesanpokiPage } from '../pages/pesanpoki/pesanpoki';
     ProfilePage,
     EditprofilePage,
     DriverhomePage,
-    PesanpokiPage
+    PesanpokiPage,
+    KonfirmasiPage
   ],
   providers: [
     StatusBar,

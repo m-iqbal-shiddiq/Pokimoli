@@ -52,7 +52,7 @@ export class DriverPage {
       if(response.status==200){    
         this.data.logout();
         
-        this.data.login(response.data,"user");//ke lokal
+        this.data.login(response.data,"driver");//ke lokal
         
         this.navCtrl.setRoot(DriverhomePage);
         loading.dismiss();
