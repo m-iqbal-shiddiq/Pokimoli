@@ -3,7 +3,6 @@ import { IonicPage, NavController, NavParams, LoadingController, AlertController
 import { Data } from '../../provider/data';
 import { Http } from '@angular/http';
 import { HomePage } from '../home/home';
-import { KonfirmasiPage } from '../konfirmasi/konfirmasi';
 /**
  * Generated class for the PesanpokiPage page.
  *
@@ -69,10 +68,27 @@ export class PesanpokiPage {
       if(response.status==200){    
  
         
-        this.navCtrl.push(KonfirmasiPage);      
+        this.navCtrl.push(HomePage);      
         loading.dismiss();
       }
-         
+      else if(response.status==409) {
+        loading.dismiss();
+          let alert = this.alertCtrl.create({
+            title: 'Email sudah terdaftar',      
+            buttons: ['OK']
+          });
+          alert.present();
+          loading.dismiss();
+      }
+      else {
+        loading.dismiss();
+          let alert = this.alertCtrl.create({
+            title: 'Gagal membuat akun',      
+            buttons: ['OK']
+          });
+          alert.present();      
+          loading.dismiss();
+      }    
       });
       //apiPost  
     }

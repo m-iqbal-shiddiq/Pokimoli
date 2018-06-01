@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { PesanpokiPage } from '../pesanpoki/pesanpoki';
+import { ProfilePage } from '../profile/profile';
 
 @Component({
   selector: 'page-home',
@@ -14,9 +15,11 @@ export class HomePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad PesanpokiPage');
   }
-gotoPesanpoki(){
-  this.navCtrl.push(PesanpokiPage);
-}
-
+  gotoPesanpoki(){
+    this.navCtrl.push(PesanpokiPage);
+  }
+  gotoProfile(){
+    this.navCtrl.push(ProfilePage);
+  }
 }
 

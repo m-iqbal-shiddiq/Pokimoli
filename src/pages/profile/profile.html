@@ -1,3 +1,4 @@
+<!--
 <ion-header no-border>
 <ion-toolbar>
   <button ion-button menuToggle left>
@@ -8,26 +9,36 @@
   </ion-title>
   </ion-toolbar>
 </ion-header>
+-->
 
 <ion-content padding class="bg">
-      <ion-list>
-        <ion-item>
-          <p class=prof-item>{{nama_user}}</p>
-        </ion-item>
-        <ion-item>
-          <strong>Email:</strong><br />
-          <p>{{email_user}}</p>
-        </ion-item>
-        <ion-item>
-          <strong>No HP:</strong><br />
-          <p>{{no_hp}}</p>
-        </ion-item>
-      </ion-list>
-  
-  <button ion-button icon-left block outline large color="greenPoki" (click)="gotoEdit()">   
-    <ion-icon name='construct' is-active="false"></ion-icon>
-    Edit</button>
+  <div class="icon">
+    <img height=25px; src="assets/imagebaru/EDITPROFIL/icon-home-white.png" (click)="gotoHome()"/>
+  </div>
+
+  <div class="list-profile">
+    <ion-list>
+      <ion-item>
+        <p class=prof-item>{{nama_user}}</p>
+      </ion-item>
+      <ion-item>
+        <strong>E-mail:</strong><br />
+        <p>{{email_user}}</p>
+      </ion-item>
+      <ion-item>
+        <strong>No HP:</strong><br />
+        <p>{{no_hp}}</p>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <button ion-button icon-left block round large color="greenPoki" (click)="gotoEdit()">   
+    <!--<ion-icon name='construct' is-active="false"></ion-icon>-->
+    <p class="ubah">Ubah Profil</p>
+   </button>
   
   <button ion-button icon-right class="keluar" medium="true" color="danger" (click)="signOut()">
-    Keluar<ion-icon name='log-out' is-active="false"></ion-icon></button>
+    Keluar
+    <ion-icon name='log-out' is-active="false"></ion-icon>
+  </button>
 </ion-content>
