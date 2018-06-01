@@ -1,5 +1,6 @@
 <?php
   include 'db_connect.php';
+    $id=$_GET['id_user'];
     $postdata = file_get_contents("php://input");
     $lokasi_penjemputan = "";
     $lokasi_tujuan = "";
@@ -13,7 +14,7 @@
 
         //ini buat cek apakah JSON ada isisnya atau tidak
         if($request){
-            $query_register = mysqli_query($connect,"INSERT INTO activity (lokasi_penjemputan,lokasi_tujuan,keterangan) VALUES ('$lokasi_penjemputan', '$lokasi_tujuan', '$keterangan') ");
+            $query_register = mysqli_query($connect,"INSERT INTO activity (id_user, lokasi_penjemputan,lokasi_tujuan,keterangan) VALUES ('$id', '$lokasi_penjemputan', '$lokasi_tujuan', '$keterangan') ");
             if($query_register){
                  $query_data = mysqli_query($connect,"SELECT * FROM activity WHERE lokasi_penjemputan='$lokasi_penjemputan' AND lokasi_tujuan = '$lokasi_tujuan'");
                  if(mysqli_num_rows($query_data)){
