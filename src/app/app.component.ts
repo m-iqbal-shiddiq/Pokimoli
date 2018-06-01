@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { Data } from '../provider/data';
 import { ProfilePage } from '../pages/profile/profile';
+import { DriverhomePage } from '../pages/driverhome/driverhome';
 
 @Component({
   templateUrl: 'app.html'
@@ -38,10 +39,19 @@ export class MyApp {
     });
     this.data.isLogin().then((value)=>{
       if(value){
-        this.rootPage = HomePage;
+        this.data.getRole().then((value)=>{
+          switch(value){
+            case "user": this.rootPage = HomePage; 
+              break;
+            case "driver": this.rootPage = DriverhomePage;
+              break;
+            default : this.rootPage = WelcomePage;
+              break;
+          }
+        })
       } else {
-        this.rootPage = WelcomePage;
-      }
+         this.rootPage = WelcomePage;
+      }    
     });
   }
 
