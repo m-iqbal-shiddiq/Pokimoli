@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
+import { IonicPage, NavController, MenuController, NavParams, LoadingController, AlertController } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { SignupPage } from '../signup/signup';
 import { Http } from '@angular/http';
@@ -25,11 +25,13 @@ export class UserPage {
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
+    public menuCtrl: MenuController,
     public http: Http,
     private data: Data,
     public loadCtrl: LoadingController,
     public alertCtrl: AlertController
     ) {
+    this.menuCtrl.swipeEnable(false);
   }
 
   ionViewDidLoad() {

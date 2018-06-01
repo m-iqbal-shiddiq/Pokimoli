@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
+import { IonicPage, MenuController, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { UserPage } from '../user/user';
 import { Data } from '../../provider/data';
@@ -28,10 +28,13 @@ export class SignupPage {
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
+    public menuCtrl: MenuController,
     private data : Data,
     public loadCtrl: LoadingController,
     public alertCtrl: AlertController,
     public http: Http) {
+
+    this.menuCtrl.swipeEnable(false);
   }
 
   ionViewDidLoad() {
@@ -90,7 +93,6 @@ export class SignupPage {
       //apiPost  
     }
   }
-  
   
   gotoHome(){
     this.navCtrl.push(HomePage);

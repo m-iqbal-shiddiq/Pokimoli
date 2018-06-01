@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, MenuController, NavParams } from 'ionic-angular';
 import { UserPage } from '../user/user';
 import { DriverPage } from '../driver/driver';
 
@@ -17,7 +17,11 @@ import { DriverPage } from '../driver/driver';
 })
 export class WelcomePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController, 
+    public menuCtrl: MenuController,
+    public navParams: NavParams) {
+    this.menuCtrl.swipeEnable(false);
   }
 
   ionViewDidLoad() {

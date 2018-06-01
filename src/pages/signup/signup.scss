@@ -8,7 +8,7 @@ page-signup {
     }
 
     .bg-img{
-        background: url('../assets/imagebaru/SIGNUPUSER/bg-signupuser.jpg') no-repeat center center fixed;
+        background: url('../assets/imagebaru/SIGNUPUSER/bg-signupuser.jpg') no-repeat center center scroll;
         background-size: cover;
         width: 100%;
         height: 100%;
@@ -24,7 +24,7 @@ page-signup {
 
     #form-img{
         //background: url('../assets/imgs/background_form.png') no-repeat center center fixed;
-        color: color($colors, greenPoki);
+        //color: color($colors, greenPoki);
         border: 3px solid color($colors, greenPoki);
         width: 100%;
         height: 50%;
@@ -49,8 +49,8 @@ page-signup {
         font-size: 11pt;
         color: color($colors, greenPoki);
         text-align: center;
-        position: fixed;
-        bottom: 0;
+        position: absolute;
+        bottom: -15%;
         right: 0;
         left: 0;
     }

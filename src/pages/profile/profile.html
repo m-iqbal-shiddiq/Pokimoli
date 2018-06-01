@@ -1,28 +1,33 @@
-<ion-header>
-    <ion-navbar color="primary">
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title text-left>Profile</ion-title>
-    </ion-navbar>
-  </ion-header>
+<ion-header no-border>
+<ion-toolbar>
+  <button ion-button menuToggle left>
+    <ion-icon name="contact"></ion-icon>
+  </button>
+  <ion-title>
+  Profile
+  </ion-title>
+  </ion-toolbar>
+</ion-header>
 
-<ion-content padding>
-   
+<ion-content padding class="bg">
       <ion-list>
         <ion-item>
-          {{nama_user}}
+          <p class=prof-item>{{nama_user}}</p>
         </ion-item>
         <ion-item>
-          {{email_user}}
+          <strong>Email:</strong><br />
+          <p>{{email_user}}</p>
         </ion-item>
         <ion-item>
-          {{no_hp}}
+          <strong>No HP:</strong><br />
+          <p>{{no_hp}}</p>
         </ion-item>
       </ion-list>
-    
-      <button ion-button color="primary" block (click)="gotoEdit()">Edit Profile</button>
-      <br/>
-      
-  <button ion-button round large="true" color="greenPoki" (click)="signOut()">Sign Out</button>
+  
+  <button ion-button icon-left block outline large color="greenPoki" (click)="gotoEdit()">   
+    <ion-icon name='construct' is-active="false"></ion-icon>
+    Edit</button>
+  
+  <button ion-button icon-right class="keluar" medium="true" color="danger" (click)="signOut()">
+    Keluar<ion-icon name='log-out' is-active="false"></ion-icon></button>
 </ion-content>

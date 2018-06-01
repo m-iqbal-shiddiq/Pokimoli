@@ -1,3 +1,55 @@
 page-profile {
+    strong {
+        color: color($colors, greenPoki);
+        }
+    p { text-align: center; }
+
+    .bg{
+        background: url('../assets/imagebaru/HOMEPAGEUSER/bg-homepageuser.jpg') no-repeat center center scroll;
+        background-size: cover;
+        //margin-top: 10%;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        
+        .scroll-content{
+            flex-direction: column;
+            justify-content: center;
+            display: flex!important;
+            align-items: center!important;
+            
+        }
+    }
+
+    .list{
+        width: 100%;
+    }
+    .list .item{
+        font-size: 120%;
+    }
+    .list p{
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .prof-content{
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .prof-item{
+        color: color($colors, greenPoki);
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.5em !important;
+        padding: 5px 0 0 0;
+    }
+
+
+    .keluar{
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+    }
 
 }
