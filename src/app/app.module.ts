@@ -4,7 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,12 +21,12 @@ import { EditprofilePage } from '../pages/editprofile/editprofile';
 import { DriverhomePage } from '../pages/driverhome/driverhome';
 import { PesanpokiPage } from '../pages/pesanpoki/pesanpoki';
 import { KonfirmasiPage } from '../pages/konfirmasi/konfirmasi';
+import { KonfirmasiPesananPage } from '../pages/konfirmasi-pesanan/konfirmasi-pesanan';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage,
     WelcomePage,
     UserPage,
     DriverPage,
@@ -35,7 +35,8 @@ import { KonfirmasiPage } from '../pages/konfirmasi/konfirmasi';
     EditprofilePage,
     DriverhomePage,
     PesanpokiPage,
-    KonfirmasiPage
+    KonfirmasiPage,
+    KonfirmasiPesananPage
   ],
   imports: [
     BrowserModule,
@@ -47,7 +48,6 @@ import { KonfirmasiPage } from '../pages/konfirmasi/konfirmasi';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
     WelcomePage,
     UserPage,
     DriverPage,
@@ -56,7 +56,8 @@ import { KonfirmasiPage } from '../pages/konfirmasi/konfirmasi';
     EditprofilePage,
     DriverhomePage,
     PesanpokiPage,
-    KonfirmasiPage
+    KonfirmasiPage,
+    KonfirmasiPesananPage
   ],
   providers: [
     StatusBar,
