@@ -22,6 +22,7 @@ import { DriverhomePage } from '../pages/driverhome/driverhome';
 import { PesanpokiPage } from '../pages/pesanpoki/pesanpoki';
 import { KonfirmasiPage } from '../pages/konfirmasi/konfirmasi';
 import { KonfirmasiPesananPage } from '../pages/konfirmasi-pesanan/konfirmasi-pesanan';
+import { MapmoliPage } from '../pages/mapmoli/mapmoli';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { KonfirmasiPesananPage } from '../pages/konfirmasi-pesanan/konfirmasi-pe
     DriverhomePage,
     PesanpokiPage,
     KonfirmasiPage,
-    KonfirmasiPesananPage
+    KonfirmasiPesananPage,
+    MapmoliPage
   ],
   imports: [
     BrowserModule,
@@ -57,7 +59,8 @@ import { KonfirmasiPesananPage } from '../pages/konfirmasi-pesanan/konfirmasi-pe
     DriverhomePage,
     PesanpokiPage,
     KonfirmasiPage,
-    KonfirmasiPesananPage
+    KonfirmasiPesananPage,
+    MapmoliPage
   ],
   providers: [
     StatusBar,
