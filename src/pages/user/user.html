@@ -1,23 +1,25 @@
 <ion-content padding class="padding bg-img">
    
-   <div class="form"> 
-      <ion-list>
-         <ion-item id="form-img">
-            <ion-label floating>Email</ion-label>
-            <ion-input type="text" [(ngModel)]="email"></ion-input>
-         </ion-item>
-         <ion-item id="form-img">
-            <ion-label floating>Kata Sandi</ion-label>
-            <ion-input type="password" [(ngModel)]="password"></ion-input>
-         </ion-item>
-      </ion-list>
-   
-      <button class="btn" ion-button round large="true" color="greenPoki" (click)="signIn()">MASUK</button>
-   
-
-      <!--<button class="btn1" ion-button block color="bluePoki" (click)="gotoSignup()">LOG IN</button>-->
-  </div>
-
-   <div class="lupasandi"><p><u>Lupa kata sandi?</u></p></div>
-   <div class="belumdaftar"><p class="one" (click)="gotoSignup()">Belum terdaftar? <b><u>Buat akun.</u></b></p></div>
-</ion-content>
+    <div class="form">
+       <h3 class="read-text">Masukkan <b>e-mail</b> dan <br> <b>kata sandi</b> Anda.</h3>
+       <ion-list>
+          <ion-item id="form-img">
+             <ion-label floating>Email</ion-label>
+             <ion-input type="text" [(ngModel)]="email"></ion-input>
+          </ion-item>
+          <ion-item id="form-img">
+             <ion-label floating>Kata Sandi</ion-label>
+             <ion-input type="password" [(ngModel)]="password"></ion-input>
+          </ion-item>
+       </ion-list>
+    
+       <button class="btn" ion-button round large="true" color="greenPoki" (click)="signIn()">MASUK</button>
+    
+ 
+       <!--<button class="btn1" ion-button block color="bluePoki" (click)="gotoSignup()">LOG IN</button>-->
+   </div>
+ 
+    <div class="lupasandi"><p><u>Lupa kata sandi?</u></p></div>
+    <div class="belumdaftar"><p class="one" (click)="gotoSignup()">Belum terdaftar? <b><u>Buat akun.</u></b></p></div>
+ </ion-content>
+ 

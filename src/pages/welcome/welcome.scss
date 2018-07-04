@@ -1,16 +1,21 @@
 page-welcome {
     div{
         position: relative;
-        top: 150px;
+        top: 140px;
     }
     .text{
+        font-style: italic;
+        color: color($colors, greenPoki);
+        text-align: center;
+    }
+    .text-bold{
         font-weight: bold;
         font-style: italic;
         color: color($colors, greenPoki);
         text-align: center;
     }
     .bg-img{
-        background: url('../assets/imagebaru/STARTSCREEN/bg-1.jpg') no-repeat center center fixed;
+        background: url('../assets/imagebaru/STARTSCREEN/bg-atasbawah.jpg') no-repeat center center fixed;
         background-size: cover;
         width: 100%;
         height: 100%;
@@ -22,25 +27,15 @@ page-welcome {
         margin-right: auto;
         margin-top: 8px;
     }
-    .user-img{
-        margin-left: 25px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
     .user-btn{
-        margin-right: 45px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .driver-img{
-        margin-left: 25px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
     .driver-btn{
-        margin-right: 45px;
-        margin-top: 50px;
-        margin-bottom: 50px;
+
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 }
 

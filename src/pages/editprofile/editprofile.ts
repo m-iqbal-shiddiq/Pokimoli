@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
+import { NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
 import { Data } from '../../provider/data';
 import { Http } from '@angular/http';
 import { ProfilePage } from '../profile/profile';
@@ -11,7 +11,6 @@ import { ProfilePage } from '../profile/profile';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-editprofile',
   templateUrl: 'editprofile.html',

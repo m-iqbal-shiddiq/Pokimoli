@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>driverhome</ion-title>
+    <ion-title>PAWANG HOME</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -30,11 +30,14 @@
           <br>
           Keterangan   : {{user.keterangan}}
           <br>
-          <button ion-button round large="true" color="greenPoki" (click)="gotoKonfirmasi()">Terima</button>
+          <br>
+          <button ion-button block round large="true" color="greenPoki" (click)="gotoKonfirmasi()">Terima</button>
         </ion-card-content>
       </ion-card>
+      <br>
+      <br>
 
-    <button ion-button round large="true" color="greenPoki" (click)="signOut()">Sign Out</button>
+    <button ion-button block round large="true" color="danger" (click)="signOut()">Keluar</button>
 
 
 </ion-content>

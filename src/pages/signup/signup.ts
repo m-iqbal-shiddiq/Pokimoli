@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, MenuController, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
+import { MenuController, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { UserPage } from '../user/user';
 import { Data } from '../../provider/data';
@@ -12,7 +12,6 @@ import { Http } from '@angular/http';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-signup',
   templateUrl: 'signup.html',
@@ -99,6 +98,10 @@ export class SignupPage {
   }
   
   gotoUser(){
+    this.navCtrl.push(UserPage);
+  }
+
+  gotoSignIn(){
     this.navCtrl.push(UserPage);
   }
 

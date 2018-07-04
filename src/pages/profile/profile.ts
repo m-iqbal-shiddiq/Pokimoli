@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { NavController, NavParams, AlertController } from 'ionic-angular';
 import { WelcomePage } from '../welcome/welcome';
 import { Data } from '../../provider/data';
 import { Http } from '@angular/http';
@@ -14,7 +14,6 @@ import { EditprofilePage } from '../editprofile/editprofile';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-profile',
   templateUrl: 'profile.html',

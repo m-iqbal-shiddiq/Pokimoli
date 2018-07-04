@@ -4,24 +4,24 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<ion-header no-border>
 
   <ion-navbar>
-    <ion-title>driver</ion-title>
+    <ion-title>Driver</ion-title>
   </ion-navbar>
 
 </ion-header>
 <ion-content padding class="padding bg-img">
-   
+  <div class="driv-title">MASUKKAN KODE PAWANG ANDA</div>
   <div class="form"> 
      <ion-list>
         <ion-item id="form-img">
            <ion-label floating>KODE UNIK</ion-label>
-           <ion-input type="text" [(ngModel)]="kode_unik"></ion-input>
+           <ion-input type="password" [(ngModel)]="kode_unik"></ion-input>
         </ion-item>
      </ion-list>
   
-     <button class="btn" ion-button round large="true" color="greenPoki" (click)="signIn()">LOG IN</button>
+     <button class="btn" ion-button round large="true" color="greenPoki" (click)="signIn()">MASUK</button>
   
 
      <!--<button class="btn1" ion-button block color="bluePoki" (click)="gotoSignup()">MASUK</button>-->

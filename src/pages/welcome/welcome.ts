@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, MenuController, NavParams } from 'ionic-angular';
+import { NavController, MenuController, NavParams } from 'ionic-angular';
 import { UserPage } from '../user/user';
 import { DriverPage } from '../driver/driver';
 
@@ -10,7 +10,6 @@ import { DriverPage } from '../driver/driver';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-welcome',
   templateUrl: 'welcome.html',

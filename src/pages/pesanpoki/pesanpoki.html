@@ -4,16 +4,23 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header no-border>
+<!--<ion-header no-border>
 
   <ion-navbar>
     <ion-title>Pesan Poki</ion-title>
   </ion-navbar>
 
 </ion-header>
-
+-->
 
 <ion-content padding class="bg">
+  <div class="home-icon">
+      <!--<ion-icon name="home" (click)="gotoHome()"></ion-icon>-->
+      <img height=25px; src="assets/imagebaru/EDITPROFIL/icon-home-white.png" (click)="gotoHome()"/>
+  </div>
+  <div>
+    <p>Semua kolom wajib diisi. Isi kolom <strong>keterangan</strong> dengan ciri Anda dan keterangan lain seberkenan Anda agar mudah dikenali saat penjemputan.</p>
+  </div>
   <ion-list>
     <ion-item id="form-img">
        <ion-label floating>Lokasi Penjemputan</ion-label>
@@ -26,10 +33,12 @@
     <ion-item id="form-img">
       <ion-label floating>Keterangan</ion-label>
       <ion-input type="text" [(ngModel)]="keterangan"></ion-input>
-   </ion-item>
- </ion-list>
+    </ion-item>
+  </ion-list>
+  <button ion-button icon-end class="pesanbtn" large="True" full color="greenPoki" block (click)="pesanPoki()">
+    Pesan Poki
+    <ion-icon name='checkmark-circle' is-active='false'></ion-icon>
+  </button>
 
- <button ion-button icon-end class="pesanbtn" large="True" full color="greenPoki" block (click)="pesanPoki()">
-   Pesan Poki<ion-icon name='checkmark-circle' is-active='false'></ion-icon></button>
 
 </ion-content>

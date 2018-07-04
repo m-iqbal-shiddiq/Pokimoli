@@ -2,29 +2,36 @@ page-pesanpoki {
     .bg{
         background: url('../assets/imagebaru/HOMEPAGEUSER/bg-1.jpg') no-repeat center center scroll;
         background-size: cover;
-        margin-top: 10%;
+        margin-top: 0%;
         width: 100%;
         height: 100%;
         background-repeat: no-repeat;
         
         .scroll-content{
+        /*
             align-content: center;
             flex-direction: column;
             display: flex!important;
             align-items: center!important;
-            
-        .list{
-                width: 95%;
-                position: absolute;
+        */
+
+            .list{
+                width: 100%;
                 top: 20%;
             }
-            
+            p {
+                font-size: 1.2em;
+                color: color($colors, dark);
+                text-align: center;
+            }
         }
     }
-    .pesanbtn{
-        position: absolute;
-        bottom: 10%;
+    .home-icon{
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-bottom: 50px;
     }
-
-
+    .pesanbtn{
+        bottom: 0%;
+    }
 }

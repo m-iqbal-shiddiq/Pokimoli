@@ -2,24 +2,36 @@ page-profile {
     strong {
         color: color($colors, greenPoki);
         }
-    p { text-align: center; }
+    p {
+        text-align: center;
+    }
+
+    p.text-small {
+        font-size: 100%;
+    }
 
     .bg{
-        background: url('../assets/imagebaru/EDITPROFIL/bg-1.jpg') no-repeat center center scroll;
+        background: url('../assets/imagebaru/HOMEPAGEUSER/bg-1.jpg') no-repeat center center scroll;
         background-size: cover;
         width: 100%;
         height: 100%;
-        background-repeat: no-repeat;        
-    }
-    .icon{
-      position: absolute;
-      right: 0px;
-      padding-right: 20px;
-      padding-top: 13px;
-      padding-bottom: 20px;
-    }
-    .list-profile{
-      padding-top: 100px;
+        background-repeat: no-repeat;   
+
+        /*.scroll-content{
+            flex-direction: column;
+            justify-content: center;
+            display: flex!important;
+            align-items: center!important;
+        }*/
+
+        }
+        .home-icon{
+            padding-top: 5px;
+            padding-left: 5px;
+            padding-bottom: 100px;
+        }
+        .list-profile{
+          padding-top: 100px;
     }
 }
 
@@ -28,6 +40,9 @@ page-profile {
     }
     .list .item{
         font-size: 120%;
+    }
+    .list .item.nama{
+        background: color($colors, greyPoki);
     }
     .list p{
         font-size: 1.3em;
@@ -39,20 +54,20 @@ page-profile {
         vertical-align: middle;
     }
 
-    .prof-item{
+    p.prof-item{
         color: color($colors, greenPoki);
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 1.5em !important;
-        padding: 5px 0 0 0;
-    }
-    .ubah{
-      font-size: 25px;
-      font-weight: bold;
+        font-size: 2.0em !important;
+        padding: 0 0 0 0;
     }
 
-    .keluar{
-        position: fixed;
-        bottom: 5%;
-        right: 5%;
+    button p{
+      font-size: 25px;
+      font-weight: bold;
+      padding: 5%;
+    }
+
+    button.keluar{
+        top: 18%;
     }

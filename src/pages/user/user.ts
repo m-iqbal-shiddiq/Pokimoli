@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, MenuController, NavParams, LoadingController, AlertController } from 'ionic-angular';
+import { NavController, MenuController, NavParams, LoadingController, AlertController } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { SignupPage } from '../signup/signup';
 import { Http } from '@angular/http';
@@ -13,7 +13,6 @@ import { Data } from '../../provider/data';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-user',
   templateUrl: 'user.html',

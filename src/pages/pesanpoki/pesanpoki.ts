@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
+import { NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
 import { Data } from '../../provider/data';
 import { Http } from '@angular/http';
 import { HomePage } from '../home/home';
@@ -11,7 +11,7 @@ import { KonfirmasiPage } from '../konfirmasi/konfirmasi';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+
 @Component({
   selector: 'page-pesanpoki',
   templateUrl: 'pesanpoki.html',
@@ -42,6 +42,10 @@ export class PesanpokiPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PesanpokiPage');
+  }
+
+  gotoHome(){
+    this.navCtrl.push(HomePage);
   }
 
   pesanPoki(){

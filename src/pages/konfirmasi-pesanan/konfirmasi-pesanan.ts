@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
+import { NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
 import { Data } from '../../provider/data';
 import { Http } from '@angular/http';
 import { DriverhomePage } from '../driverhome/driverhome';
@@ -10,7 +10,6 @@ import { DriverhomePage } from '../driverhome/driverhome';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-konfirmasi-pesanan',
   templateUrl: 'konfirmasi-pesanan.html',

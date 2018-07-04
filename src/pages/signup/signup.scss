@@ -1,14 +1,14 @@
 page-signup {
     div.form{
         position: absolute;
-        top: 35%;
+        top: 17%;
         right: 5%;
         left: 5%;
         border: 1px;
     }
 
     .bg-img{
-        background: url('../assets/imagebaru/SIGNUPUSER/bg-signupuser.jpg') no-repeat center center scroll;
+        background: url('../assets/imagebaru/SIGNUPUSER/bg-1.jpg') no-repeat center center scroll;
         background-size: cover;
         width: 100%;
         height: 100%;
@@ -20,6 +20,12 @@ page-signup {
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
+    
+    }
+    .arrow-icon{
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
     }
 
     #form-img{
@@ -31,10 +37,15 @@ page-signup {
         //background-repeat: no-repeat;
     }
 
+    .read-text{
+        color: color($colors, greenPoki);
+        text-align: center;
+    }
+
     .btn{
         margin-top: 0;
         width: 100%;
-        text-alignment: center;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
     }

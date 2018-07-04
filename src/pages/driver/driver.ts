@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
+import { NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
 import { Http } from '@angular/http';
 import { Data } from '../../provider/data';
 import { DriverhomePage } from '../driverhome/driverhome';
@@ -11,7 +11,7 @@ import { DriverhomePage } from '../driverhome/driverhome';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+
 @Component({
   selector: 'page-driver',
   templateUrl: 'driver.html',
